@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/catpokemoncard/static/css/main.b8496363.css",
+    "main.js": "/catpokemoncard/static/js/main.b7edb063.js",
+    "static/js/453.0dc15cc5.chunk.js": "/catpokemoncard/static/js/453.0dc15cc5.chunk.js",
+    "static/media/EpPokemon.jpg": "/catpokemoncard/static/media/EpPokemon.4ddd52046b209ae54ec0.jpg",
+    "index.html": "/catpokemoncard/index.html",
+    "main.b8496363.css.map": "/catpokemoncard/static/css/main.b8496363.css.map",
+    "main.b7edb063.js.map": "/catpokemoncard/static/js/main.b7edb063.js.map",
+    "453.0dc15cc5.chunk.js.map": "/catpokemoncard/static/js/453.0dc15cc5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b8496363.css",
+    "static/js/main.b7edb063.js"
+  ]
+}
