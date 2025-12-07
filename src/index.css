@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+.card-container {
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.card {
+  width: 300px;
+  height: 450px;
+  border-radius: 20px;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.card-front {
+  background: linear-gradient(135deg, #b0c4de, #d3d3d3);
+  border: 3px solid #999;
+}
+
+.card-back {
+  background: linear-gradient(135deg, #a9a9a9, #c0c0c0);
+  transform: rotateY(180deg);
+  border: 3px solid #666;
+  text-align: center;
+}
+
+.card-front::after,
+.card-back::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0) 50%);
+  transform: rotate(45deg);
+  pointer-events: none;
+  animation: shine 2s infinite linear;
+
+}
+
+.card-front h2,
+.card-back h3 {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.card-front {
+  border: 3px solid #999;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+
+@keyframes shine {
+  0% {
+    transform: rotate(45deg) translateX(-200%);
+  }
+
+  100% {
+    transform: rotate(45deg) translateX(200%);
+  }
+}
+
+
+.cat-image {
+  width: 200px;  
+  height: 250px;
+  border-radius: 15px;
+  border: 2px solid white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  margin-bottom: 10px;
+}
